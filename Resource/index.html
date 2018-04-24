@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>这是首页</title>
+	<style>
+        *{
+            font-size: 50px;
+            text-align: center;
+          }
+        
+          .btn{height:80px; width:80%; padding: 0px 30px; background-color: #0071E7; border: solid 1px #0071E7; border-radius:5px; font-size: 1em; color: white}
+ 	</style>
+</head>
+<body>
+	<div>
+		<P>这是个网页</P>
+	</div>
+
+	<div id="div1"></div>
+	<div>
+		<button type="button" class="btn" onclick="test1()">按钮</button>
+	</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	function test1() {
+
+			//alert('这是网页中alert的消息');
+
+			/*
+			var r=confirm("这是网页的confirm事件");
+			if (r) {
+				document.getElementById('div1').innerHTML = '点击了确认'
+			}else{
+				document.getElementById('div1').innerHTML = '点击了取消'
+			}*/
+
+			var name=prompt("Please enter your name","")
+			document.getElementById('div1').innerHTML = name
+
+
+		}	
+
+</script>
