@@ -21,9 +21,8 @@
 }
 - (IBAction)UIWebViewClick:(UIButton *)sender {
     
-    funcA();
-//    UIWebViewVC *webviewvc = [[UIWebViewVC alloc]init];
-//    [self presentViewController:webviewvc animated:YES completion:nil];
+    UIWebViewVC *webviewvc = [[UIWebViewVC alloc]init];
+    [self presentViewController:webviewvc animated:YES completion:nil];
 }
 
 - (IBAction)WKWebViewClick:(UIButton *)sender {
@@ -31,10 +30,7 @@
     [self presentViewController:wkwebviewvc animated:YES completion:nil];
 }
 
-void funcA(){
-    int a = 0xFFFF38;
 
-}
 
 
 @end
